@@ -941,7 +941,7 @@ class Pipeline:
         with open(self.f_json, "w", encoding="utf-8") as fh:
             json.dump(unique, fh, indent=2, ensure_ascii=False)
 
-        # ── Plain text output (SecretHunter-style) ──
+        # ── Plain text output ──
         conf_label = {"high": "HIGH  ", "medium": "MEDIUM", "low": "LOW   "}
         lines = [
             "=" * 72,
